@@ -4,12 +4,12 @@ import java.util.Map;
 
 
 public class Fabricante {
-	static Pais[] myarray = new Pais[100];
+	public static Pais[] myarray = new Pais[100];
 
-   String nombre;
-   Pais pais;
-   static int cantidadFabricantes;
-   Fabricante(String nombre, Pais pais){
+	public String nombre;
+   public Pais pais;
+   public static int cantidadFabricantes;
+   public Fabricante(String nombre, Pais pais){
 	   	this.nombre = nombre;
    		this.pais=pais;
    		myarray[cantidadFabricantes++] = pais;  		

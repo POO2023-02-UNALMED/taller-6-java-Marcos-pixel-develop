@@ -10,13 +10,13 @@ package vehiculos;
  * @author usuario
  */
 public class Automovil extends Vehiculo{
-    private int puestos;
-    static int cantidadVehiculos;
+    public int puestos;
+    public static int cantidadVehiculos;
 
-    Automovil(){
+    public Automovil(){
     	
     }
-    Automovil(String placa, String nombre, int precio, Fabricante fabricante ,int puestos){
+    public Automovil(String placa, String nombre, int precio, Fabricante fabricante ,int puestos){
 super(new Automovil());
         this.puertas = 4;
         this.velocidadMaxima=100;

@@ -5,17 +5,14 @@
 
 package vehiculos;
 
-/**
- *
- * @author usuario
- */
+
 public class Camion  extends Vehiculo{
-    private int ejes;
-    Camion(){
+    public int ejes;
+    public Camion(){
     	
     	
     }
-    Camion(String placa, String nombre, int precio, Fabricante fabricante ,int ejes){
+    public Camion(String placa, String nombre, int precio, Fabricante fabricante ,int ejes){
     	super(new Camion());
         
         this.puertas = 2;
@@ -31,7 +28,7 @@ public class Camion  extends Vehiculo{
     public int getEjes() {
     	return ejes;
     }
-    public void setEjes() {
+    public void setEjes(int ejes) {
     	this.ejes = ejes;
     }
 }

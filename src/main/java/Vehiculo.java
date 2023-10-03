@@ -4,33 +4,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Vehiculo {
-    static Fabricante[] myarray = new Fabricante[100];
-    protected String placa;
-    protected int puertas;
-    protected float velocidadMaxima;
-    protected String nombre;
-    protected int precio;
-    protected String traccion;
-    protected Fabricante fabricante;
-    protected static int CantidadVehiculos;
-    static int  CantidadVehiculosAutomovil;
-    static int  CantidadVehiculosCamioneta;
-    static int  CantidadVehiculosCamion;
+    public static Fabricante[] myarray = new Fabricante[100];
+    public  String placa;
+    public int puertas;
+    public float velocidadMaxima;
+    public String nombre;
+    public int precio;
+    public String traccion;
+    public Fabricante fabricante;
+    public static int CantidadVehiculos;
+    public static int  CantidadVehiculosAutomovil;
+    public static int  CantidadVehiculosCamioneta;
+    public static int  CantidadVehiculosCamion;
     
-    Vehiculo(){
+    public Vehiculo(){
     	
     	
 }
-    Vehiculo(Automovil auto){
+    public Vehiculo(Automovil auto){
     	this();
     	CantidadVehiculosAutomovil++;
     	
     }
-    Vehiculo(Camioneta camioneta){
+    public Vehiculo(Camioneta camioneta){
     	this();
     	CantidadVehiculosCamioneta++;
     }
-    Vehiculo(Camion camion){
+    public Vehiculo(Camion camion){
     	this();
     	CantidadVehiculosCamion++;
     }

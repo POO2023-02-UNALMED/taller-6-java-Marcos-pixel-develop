@@ -11,10 +11,10 @@ package vehiculos;
  */
 public class Camioneta  extends Vehiculo{
     private boolean volco;
-    Camioneta(){
+    public Camioneta(){
     	
     }
-    Camioneta(String placa, int puertas,String nombre, int precio, Fabricante fabricante ,boolean volco){
+    public Camioneta(String placa, int puertas,String nombre, int precio, Fabricante fabricante ,boolean volco){
 super(new Camioneta());
         this.velocidadMaxima=90;
         this.traccion="4X4";

@@ -8,7 +8,7 @@ package vehiculos;
 public class Pais {
     String nombre;
     
-    Pais(String nombre){
+    public Pais(String nombre){
     	this.nombre = nombre;
     	
     }
