@@ -5,10 +5,11 @@ package vehiculos;
  * @author usuario
  */
 
-public class Pais {
+public class Pais extends Fabricante {
     String nombre;
     
     public Pais(String nombre){
+    	super();
     	this.nombre = nombre;
     	
     }

@@ -3,12 +3,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Fabricante {
+public class Fabricante extends Vehiculo{
 	public static Pais[] myarray = new Pais[100];
 
 	public String nombre;
    public Pais pais;
    public static int cantidadFabricantes;
+   Fabricante() {
+	   
+   }
    public Fabricante(String nombre, Pais pais){
 	   	this.nombre = nombre;
    		this.pais=pais;
