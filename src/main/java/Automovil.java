@@ -16,7 +16,7 @@ public class Automovil extends Vehiculo{
     public Automovil(){
     	
     }
-    public Automovil(String placa, String nombre, int precio, Fabricante fabricante ,int puestos){
+    public Automovil(String placa, String nombre, int precio,int peso, Fabricante fabricante ,int puestos){
 super(new Automovil());
         this.puertas = 4;
         this.velocidadMaxima=100;
@@ -24,6 +24,7 @@ super(new Automovil());
         this.puestos=puestos;
         this.nombre=nombre;
         this.precio=precio;
+        this.peso = peso;
         this.fabricante=fabricante;
         this.placa=placa;
         Vehiculo.myarray[Vehiculo.CantidadVehiculos++]=fabricante;

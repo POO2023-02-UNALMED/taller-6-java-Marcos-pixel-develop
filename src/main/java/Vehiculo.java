@@ -10,6 +10,7 @@ public class Vehiculo {
     public float velocidadMaxima;
     public String nombre;
     public int precio;
+    public int peso;
     public String traccion;
     public Fabricante fabricante;
     public static int CantidadVehiculos;
@@ -68,6 +69,12 @@ public class Vehiculo {
     public int getPuertas(){
         return puertas;
     }
+    public int getPeso() {
+    	return peso;
+    }
+    public void setPeso(int peso) {
+    	this.peso= peso;
+    }
     public static String vehiculosPorTipo() {
     	return "Automoviles:" + CantidadVehiculosAutomovil +"\n"+
     			"Camionetas:" + CantidadVehiculosCamioneta+"\n"+
@@ -78,6 +85,10 @@ public class Vehiculo {
     }
     public static int getCantidadVehiculos(){
         return CantidadVehiculos;
+    }
+    public static void setCantidadVehiculos(int cantidad) {
+    	CantidadVehiculos=cantidad;
+    	
     }
     public String getPlaca() {
     	return placa;
@@ -97,6 +108,7 @@ public class Vehiculo {
     public void setPuertas(int puertas) {
     	this.puertas = puertas;
     }
+   
     public void setPrecio(int precio) {
     	this.precio=precio;
     }

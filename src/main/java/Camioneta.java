@@ -14,12 +14,13 @@ public class Camioneta  extends Vehiculo{
     public Camioneta(){
     	
     }
-    public Camioneta(String placa, int puertas,String nombre, int precio, Fabricante fabricante ,boolean volco){
+    public Camioneta(String placa, int puertas,String nombre, int precio,int peso, Fabricante fabricante ,boolean volco){
 super(new Camioneta());
         this.velocidadMaxima=90;
         this.traccion="4X4";
         this.puertas = puertas;
         this.volco=volco;
+        this.peso= peso;
         this.nombre=nombre;
         this.precio=precio;
         this.fabricante=fabricante;

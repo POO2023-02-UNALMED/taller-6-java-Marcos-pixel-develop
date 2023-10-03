@@ -12,7 +12,7 @@ public class Camion  extends Vehiculo{
     	
     	
     }
-    public Camion(String placa, String nombre, int precio, Fabricante fabricante ,int ejes){
+    public Camion(String placa, String nombre, int precio,int peso, Fabricante fabricante ,int ejes){
     	super(new Camion());
         
         this.puertas = 2;
@@ -21,6 +21,7 @@ public class Camion  extends Vehiculo{
         this.ejes=ejes;
         this.nombre=nombre;
         this.precio=precio;
+        this.peso = peso;
         this.fabricante=fabricante;
         this.placa=placa;
         Vehiculo.myarray[Vehiculo.CantidadVehiculos++]=fabricante;
